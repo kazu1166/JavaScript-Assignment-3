@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JS Assignment#3</title>
+  </head>
+  <body>
+    <h2>JS Assignment#3 - The Smoothie Machine</h2>
+
+    <div class="wrapper">
+      <section class="form">
+        <h1>Choose for your Smoothie</h1>
+
+        <div class="form-container">
+          <form action="">
+            <label for="base">Base Fruit (Required $5)</label><br />
+            <select name="base" id="base" required>
+              <option value="" disabled selected></option>
+              <option value="Strawberry">Strawberry</option>
+              <option value="Blueberry">Blueberry</option>
+              <option value="Banana">Banana</option>
+              <option value="Kiwi">Kiwi</option>
+              <option value="Orange">Orange</option>
+            </select>
+            <br /><br />
+
+            <label for="second">Second Fruit (Optional +$1)</label><br />
+            <select name="second" id="second">
+              <option value="" disabled selected></option>
+              <option value="Strawberry">Strawberry</option>
+              <option value="Blueberry">Blueberry</option>
+              <option value="Banana">Banana</option>
+              <option value="Kiwi">Kiwi</option>
+              <option value="Orange">Orange</option>
+            </select>
+            <br /><br />
+
+            <label for="milk">Milk (Required)</label><br />
+            <select name="milk" id="milk" required>
+              <br /><br />
+              <option value="" disabled selected></option>
+              <option value="Cow Milk">Cow Milk</option>
+              <option value="Soy Milk">Soy Milk</option>
+              <option value="Coconut Milk">Coconut Milk</option>
+              <option value="Yogurt">Yogurt</option>
+            </select>
+            <br /><br />
+
+            <label for="topping">Topping (Optional)</label><br />
+            <select name="topping" id="topping">
+              <option value="" disabled selected></option>
+              <option value="Boba">Boba (+$0.5)</option>
+              <option value="Crunched Cookies">Crunched Cookies (+$1)</option>
+              <option value="Coconut Chunk">Coconut Chunk (+$0.5)</option>
+            </select>
+            <br /><br />
+
+            <label for="size">Size (Required)</label><br />
+            <select name="size" id="size">
+              <option value="" disabled selected></option>
+              <option value="regular">Regular</option>
+              <option value="large">Large (+$1)</option>
+            </select>
+            <br /><br />
+
+            <label for="sweetness">Sweetness Level (Required)</label><br />
+            <select name="sweetness" id="sweetness" required>
+              <option value="" disabled selected></option>
+              <option value="0">0%</option>
+              <option value="30">30%</option>
+              <option value="50">50%</option>
+              <option value="70">70%</option>
+              <option value="100">100%</option>
+            </select>
+            <br /><br />
+
+            <label for="ice">Ice Level (Required)</label><br />
+            <select name="ice" id="ice" required>
+              <option value="" disabled selected></option>
+              <option value="regular">Regular Ice</option>
+              <option value="less">Less Ice</option>
+              <option value="no">No Ice</option>
+            </select>
+            <br /><br />
+
+            <button type="reset" id="reset">Reset</button>
+            <button type="submit">Order</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="output">
+        <div id="output" class="output-container"></div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
